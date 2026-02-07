@@ -1,0 +1,24 @@
+Opsi 2: "The Elegant Luxury" (Mewah, Eksklusif, Mahal)
+Cocok untuk: Interior desainer high-end, butik furnitur klasik, atau properti mewah.
+
+Color Palette (Dark Mode):
+
+Background: Matte Black (#121212) atau Rich Dark Green (#013220)
+
+Teks Utama: Putih (#FFFFFF)
+
+Tombol/Aksen: Muted Gold (#D4AF37) atau Bronze (#CD7F32)
+
+Garis Pemisah: Grey tipis (#333333)
+
+Font Pairing:
+
+Header (Nama): Playfair Display atau Cinzel. Font jenis Serif (ada kaki) memberikan kesan klasik dan mahal.
+
+Body (Info): Montserrat (Light/Thin). Kontras antara font tebal klasik dan font tipis modern sangat estetik.
+
+Gaya Desain:
+
+Minimalis, banyak ruang kosong (negative space).
+
+Tombol sebaiknya berupa outline (garis pinggir warna emas, tengah transparan) daripada blok warna penuh.

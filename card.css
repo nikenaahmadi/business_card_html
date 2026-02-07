@@ -1,0 +1,259 @@
+body {
+    background-color: #CD7F32;
+    margin: 0;
+    padding: 10px;
+}
+
+.front-card {
+    background-color: #121212;
+    color: white;
+    width: 600px;
+    max-width: 90vw;
+    height: 350px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.front-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.gambar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    margin: 0 0 5px 0;
+    font-family: Playfair Display, serif;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.name {
+    font-family: Playfair Display, serif;
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.description {
+    font-family: Playfair Display, serif;
+    font-size: 13px;
+    color: white;
+    margin: 0;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.back-card {
+    background-color: #ffffff;
+    color: #013220;
+    width: 600px;
+    max-width: 90vw;
+    height: 350px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 15px 40px;
+    align-items: center;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    grid-column: 1;
+    grid-row: 1 / 4;
+    align-self: start;
+}
+
+.pegawai {
+    font-family: Playfair Display, serif;
+    font-size: 20px;
+    color: #013220;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    padding-left: 170px;
+}
+
+.jabatan {
+    font-family: Playfair Display, serif;
+    font-size: 16px;
+    color: #013220;
+    margin: 0;
+    text-align: left;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+    padding-left: 170px;
+}
+
+.contact-info {
+    font-family: Playfair Display, serif;
+    font-size: 14px;
+    color: #013220;
+    line-height: 2;
+    text-align: left;
+    grid-column: 2;
+    grid-row: 1 / 4;
+    align-self: center;
+}
+
+.phone, .email, .linkedin {
+    margin: 8px 0;
+}
+
+.back-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* RESPONSIVE UNTUK HANDPHONE */
+@media screen and (max-width: 768px) {
+    .front-card {
+        height: auto;
+        margin: 20px auto;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .gambar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .back-card {
+        height: auto;
+        margin: 20px auto;
+        padding: 20px;
+        grid-template-columns: 1fr; /* 1 kolom saja */
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    .foto {
+        width: 120px;
+        height: 120px;
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+        margin-bottom: 10px;
+    }
+
+    .pegawai {
+        grid-column: 1;
+        grid-row: 2;
+        padding-left: 0;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .jabatan {
+        grid-column: 1;
+        grid-row: 3;
+        padding-left: 0;
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .contact-info {
+        grid-column: 1;
+        grid-row: 4;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .phone, .email, .linkedin {
+        margin: 5px 0;
+    }
+}
+
+/* RESPONSIVE UNTUK HANDPHONE KECIL */
+@media screen and (max-width: 480px) {
+    .front-card {
+        padding: 15px;
+    }
+
+    .gambar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .name {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 11px;
+    }
+
+    .back-card {
+        padding: 15px;
+    }
+
+    .foto {
+        width: 100px;
+        height: 100px;
+    }
+
+    .pegawai {
+        font-size: 16px;
+    }
+
+    .jabatan {
+        font-size: 13px;
+    }
+
+    .contact-info {
+        font-size: 11px;
+    }
+}
